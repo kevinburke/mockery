@@ -210,7 +210,7 @@ func (s *GeneratorSuite) TestGeneratorPrologueWithMultipleImportsSameName() {
 
 	expected := `package mocks
 
-import fixtureshttp "github.com/vektra/mockery/mockery/fixtures/http"
+import fixtureshttp "github.com/kevinburke/mockery/mockery/fixtures/http"
 import http "net/http"
 import mock "github.com/stretchr/testify/mock"
 
@@ -968,7 +968,7 @@ func (s *GeneratorSuite) TestPrologueWithImportSameAsLocalPackage() {
 
 import fixtures "` + s.getInterfaceRelPath(generator.iface) + `"
 import mock "github.com/stretchr/testify/mock"
-import test "github.com/vektra/mockery/mockery/fixtures/test"
+import test "github.com/kevinburke/mockery/mockery/fixtures/test"
 
 `
 
@@ -981,7 +981,7 @@ func (s *GeneratorSuite) TestPrologueWithImportFromNestedInterface() {
 	)
 	expected := `package mocks
 
-import fixtureshttp "github.com/vektra/mockery/mockery/fixtures/http"
+import fixtureshttp "github.com/kevinburke/mockery/mockery/fixtures/http"
 import http "net/http"
 import mock "github.com/stretchr/testify/mock"
 
